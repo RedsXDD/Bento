@@ -8,6 +8,7 @@
 const CONFIG = {
 	// General
 	name: "Reds",
+	utc: -3, // UTC timezone offset.
 
 	// Greetings
 	greetingMorning: "おはよう~ <3",

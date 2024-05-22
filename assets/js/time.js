@@ -30,12 +30,15 @@ function displayClock() {
   ];
 
   var d = new Date();
-  var mm = monthNames[d.getMonth()];
-  var dd = d.getDate();
-  var day = weekday[d.getDay()];
+  var offset = 60 * 60 * 1000 * (CONFIG.utc);
+  var offsetDate = new Date(d.getTime() + offset);
 
-  var min = (mins = ("0" + d.getMinutes()).slice(-2));
-  var hh = d.getHours();
+  var mm = monthNames[offsetDate.getMonth()];
+  var dd = offsetDate.getDate();
+  var day = weekday[offsetDate.getDay()];
+
+  var min = (mins = ("0" + offsetDate.getMinutes()).slice(-2));
+  var hh = offsetDate.getHours();
   var ampm = "";
 
   document.getElementById("hour").innerText = hh;
