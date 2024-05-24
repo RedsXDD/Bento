@@ -11,10 +11,10 @@ const CONFIG = {
 	utc: -3, // UTC timezone offset.
 
 	// Greetings
-	greetingMorning: "おはよう~ <3",
-	greetingAfternoon: "こんにちは~ <3",
-	greetingEvening: "こんばんは~ <3",
-	greetingNight: "寝てください!!! D:",
+	greetingMorning: "おはよう~ ＼（～Ｏ～）／",
+	greetingAfternoon: "こんにちは ( -_-)旦",
+	greetingEvening: "こんばんは (´･ω･`)",
+	greetingNight: "寝てください!!! (- o - ) zzZ ☽",
 
 	// Layout
 	bentoLayout: "bento",
