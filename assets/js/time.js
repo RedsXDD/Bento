@@ -30,7 +30,7 @@ function displayClock() {
   ];
 
   var d = new Date();
-  var offset = 60 * 60 * 1000 * (CONFIG.utc);
+  var offset = 60 * 60 * 1000 * CONFIG.utc;
   var offsetDate = new Date(d.getTime() + offset);
 
   var mm = monthNames[offsetDate.getMonth()];
